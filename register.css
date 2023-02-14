@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&family=Nerko+One&family=Noto+Sans+Chakma&family=Noto+Serif&display=swap');
+
+
+/* ----- General style ----- */
+:root{
+    --green-color:  rgba(0, 175, 79, 0.772);
+    --darkgrey-color: #333;
+    --neutralwhite-color: #fff;
+    --grey-color: #999;
+    --ligthgrey-color: rgb(223, 221, 221);
+    --beige-color: beige;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+}
+
+
+/* ----- Header ----- */
+.header {
+    display: flex;
+    background-color: var(--darkgrey-color);
+    color: white;
+    text-align: start;
+    padding: 10px 50px;
+}
+
+.header > p {
+    color: var(--neutralwhite-color);
+    text-transform: capitalize;
+    font-size: 3em;
+    margin: 0px;
+    padding-right: 10px;
+}
+
+.header > h1 {
+    font-size: 1em;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.header > form {
+    cursor: pointer;
+    padding-top: 30px;
+    margin-left: auto;
+}
+
+.form > :first-child {
+    margin-right: 20px;
+    font-size: larger;
+}
+
+
+
+/* ----- Form ----- */
+.registerForm {
+    padding: 40px 30px 40px 30px;
+    margin: 10px;
+    max-width: 550px;
+    border: 0.5px solid var(--beige-color);
+    border-radius: 5px;
+    box-shadow: 8px 8px 5px rgb(237 234 234);
+    line-height: 1.6em;
+}
+
+.registerForm > input[type="text"], input[type="date"], input[type="mail"], input[type="password"], textarea, select {
+    display: block;
+    width: 100%;
+    padding: 10px 18px;
+    margin: 6px 0px 0px 0px;
+    border: none;
+    border-bottom: 1px solid var(--grey-color);
+}
+
+.registerForm > textarea {
+    border: 1px solid var(--grey-color);
+    border-radius: 5px;
+    resize: none;
+    height: 150px;
+    margin: 16px 0px;
+}
+
+.registerForm > :first-child {
+    margin-bottom: 40px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.checkbox {
+    display: flex;
+
+}
+
+div.checkbox > input {
+    display: block;
+    margin-right: 10px;
+}
+
+div.checkbox > label {
+    font-size: smaller;
+}
+
+div.checkbox > label a {
+    color: var(--green-color);
+}
+
+.consenso {
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+}
+
+.consenso > p {
+    margin-bottom: 0px;
+}
+
+.consenso > {
+    display: block;
+}
+
+.registerForm > input[type="submit"] {
+    margin-top: 26px;
+    background-color: var(--green-color);
+    padding: 8px 20px;
+    border: black;
+    border-radius: 5px;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+
+/* ----- Footer ----- */
+#footerStyle {
+    background-color: var(--ligthgrey-color);
+    text-align: center;
+    padding: 8px;
+    color: var(--grey-color);
+}
+
+#footerStyle > p {
+    margin: 6px;
+}
+
+
+
+/* ------ Mediaquerry ----- */
+@media (max-width: 768px) {
+    .header > h1 {
+        opacity: 0;
+    }
+
+    .header > form {
+        margin-left: 0px;
+    }
+}
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header > h1 {
+        display: none;
+    }
+
+    .header > p {
+        font-size: 2em;
+        margin-top: 10px;
+    }
+    
+    .header > form {
+        font-size: 14px;
+        padding-top: 5px;
+    }
+
+    .form > :first-child {
+        margin-right: 5px;
+        font-size: smaller;
+    }
+
+}
