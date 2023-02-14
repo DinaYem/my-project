@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&family=Nerko+One&family=Noto+Sans+Chakma&family=Noto+Serif&display=swap');
+
+/* ----- general style ----- */
+:root {
+    --ligthgrey-color: rgb(234, 233, 233);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+}
+
+
+ /* ----- Header ----- */
+ .header {
+    display: flex;
+    background-color:#333;
+    color: white;
+    text-align: start;
+    padding: 10px 50px;
+}
+
+.header > p {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 3em;
+    margin: 0px;
+    padding-right: 10px;
+}
+
+.header > h1 {
+    font-size: 1em;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.header > form {
+    cursor: pointer;
+    padding-top: 30px;
+    margin-left: auto;
+}
+
+.form > :first-child {
+    margin-right: 20px;
+    font-size: larger;
+}
+
+
+
+/* ----- Main ----- */
+main {
+    display: flex;
+    border: 1px solid var(--ligthgrey-color);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.aside20 {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 10px 10px 10px;
+    flex: 20%;
+    align-items: center;
+    border: 1px solid var(--ligthgrey-color);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.section80 {
+    border: 1px solid var(--ligthgrey-color);
+    padding: 10px 50px 10px 50px;
+    flex: 80%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.dropDownList {
+    color: red;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+
+
+/* ----- Sidebar-20 Hamburger ----- */
+#hamburgerContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.hamburger {
+    display: block;
+    padding-top: 0px;
+    cursor: pointer;
+}
+
+.rect1, .rect2 {
+    width: 16px;
+    height: 2px;
+    background-color: #555;
+    transition: 0.5s;
+    
+}
+.rect1 {
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.rect2 {
+    transform: rotate(90deg) translate(-8px, 6px);
+    -webkit-transform: rotate(90deg) translate(-8px, 6px); 
+    margin-top: 6px;
+    margin-left: 66px;
+} 
+
+.changeHamburgerIcon .rect1 {
+    background-color: red;
+}
+
+.changeHamburgerIcon .rect2 {
+    opacity: 0;
+}
+
+#innerNavbarContainer {
+    padding: 3px 25px;
+    min-width: 130px;
+    background-color: rgb(246, 245, 245);
+}
+
+#innerNavbarContainer > a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #555;
+    padding: 5px;
+}
+
+.showInnerNavbar {
+    display:flex;
+    flex-direction: column;
+
+}
+
+.hideInnerNavbar {
+    display: none;
+}
+
+/* ----- Container Adv------ */
+/* .advContainer{
+    padding: 30px 80px;
+    width: auto;
+    height: 200px;
+    border: 0.5px solid #aaa;
+    position: relative;
+    top: 200px;
+}
+
+.adv {
+    position: relative;
+    text-align: center;
+} */
+
+/* #timer {
+    text-align: center; 
+}
+ */
+ 
+/* #styleAbbreviation {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+    color: #fff;
+} */
+
+
+
+/* ----- NAV ----- */
+.nav {
+    display: flex;
+}
+
+.mainBar {
+    display: flex;
+    padding: 0px;
+    margin: 20px 10px 10px 50px;
+    list-style-type: none;
+    /* justify-content: space-evenly; */
+  }
+
+.mainBar > li {
+    width: 150px;
+    background-color: rgb(245, 242, 242);
+   /* flex: 10%;  *//* == flex-grow:1, flex-shrink:1, flex-basis:25% */
+}
+
+.mainBar > li a {
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+    text-transform:uppercase;
+    color: #000;
+    text-align: center;
+    border: 1px solid rgb(178, 177, 177);
+    border-radius: 2px;
+    /* background-color: rgb(1, 250, 34); */
+}
+
+.mainBar > li a:hover {
+    background-color: rgba(0, 175, 79, 0.772);
+}
+
+.registerLoginBar {
+    display: flex;
+    padding: 0px;
+    margin: 30px 50px 0px 0px;
+    list-style-type: none;
+    margin-left: auto;
+}
+.registerLoginBar > li {
+    max-width: 100px;
+    min-width: 90px;
+}
+.registerLoginBar > li a {
+    padding: .5em 1em;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(0, 175, 79, 0.772);
+    border: 1px solid rgb(178, 177, 177);
+    color: #000;
+}
+
+.registerLoginBar > li a:hover {
+    background-color: #ff0;
+    color: rgba(0, 24, 11, 0.772);
+    border: 1px solid rgba(0, 24, 11, 0.772);
+}
+
+.registerLoginBar > :first-child {
+    margin-right: 20px;
+}
+
+
+/* ------ Article ------ */
+.styleH2 {
+    font-size: 28px;
+    text-align: end;
+    color: #fff;
+    margin: -20px 60px 0px 0px; 
+}
+
+.articleHeader {
+    margin-top: 20px;
+    padding: 10% 0;
+}
+
+.articleHeaderImage {
+    background-image: url(../assets/iot.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    width:auto;
+}
+
+.sectionStyle {
+    margin: 50px 0px 0px 0px;
+    text-align: justify;
+}
+
+.articlesP {
+    font-size: 1em;
+    color: red;
+    margin: 32px 0px 32px 0px;
+  }
+
+.sectionStyle > h3 {
+    font-size: 1.7em;
+    text-align: start;
+    /*padding-right: 80px; */
+  }
+
+  .sectionStyle > h4 {
+    font-size: 1.3em;
+    margin-bottom: 0px;
+}
+
+.sectionStyle > hr {
+    margin-bottom: 30px;
+}
+
+/* .sectionStyle > :nth-child(3) {
+    text-align: start;
+    /* padding-right: 20px; */
+  /*  margin: 0px;
+  }
+
+.sectionStyle > :nth-child(4) {
+    text-align: start;
+    /* padding-right: 20px; */
+   /* margin-top: 0px;
+    margin-bottom: 50px;
+} */
+
+
+
+.responsiveImage {
+    display: block;
+    width: 20%;
+    height: auto;
+    border-radius: 20px;
+    float: left;
+    padding: 10px;
+} 
+
+
+
+/* ----- Footer ----- */
+#footerStyle {
+    background-color: rgb(223, 221, 221);
+    text-align: center;
+    padding: 8px;
+    color: grey;
+}
+
+#footerStyle > p {
+    margin: 6px;
+}
+
+
+
+/* ----- Run time ----- */
+/* creare animazione per l'image di articleHeaderImage*/
+.displayNone {
+    display: none;
+}
+
+@keyframes append-animate {
+    from { /*primo stato di photogrami*/
+        /* transform: scale(0); */
+        opacity: 0;
+    }
+    to { /*lo stato finale di photogrami*/
+        /* transform: scale(1); */
+        opacity: 1;
+    }
+}
+
+.opacityStyle {
+    display: block;
+    animation: append-animate 1s linear;
+} 
+
+
+
+/* ----- Mediaquerry ----- */
+
+@media (max-width: 992px) {
+    .articleHeader > h3 {
+        font-size: 1.6em;
+        padding-right: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .registerLoginBar {
+        margin: 30px 0px 20px 60px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header > h1 {
+        opacity: 0;
+    }
+
+    .header > form {
+        margin-left: 0px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .mainBar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mainBar > li > a {
+        font-size: smaller;
+    }
+
+    .registerLoginBar {
+        margin: 30px 0px 20px 90px;
+    }
+
+    .section80 {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .articleHeader > h3 {
+        font-size: 1.2em;
+        padding-right: 10px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header > h1 {
+        display: none;
+    }
+
+    .header > p {
+        font-size: 2em;
+        margin-top: 10px;
+    }
+    
+    .header > form {
+        font-size: 14px;
+        padding-top: 5px;
+    }
+
+    .form > :first-child {
+        margin-right: 5px;
+        font-size: smaller;
+    }
+
+    .nav {
+        font-size: 14px;
+    }
+
+    .mainBar {
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+
+    .registerLoginBar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dropDownList {
+        font-size: smaller;
+        margin-right: 5px;
+        margin-left: -5px; 
+    }
+
+    #innerNavbarContainer > a {
+        font-size: smaller;
+    }
+
+    main {
+         flex-direction: column;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .sectionStyle {
+        font-size: 1em;
+    }
+
+    .aside20 {
+        display: none;
+    }
+
+    .articleHeader > h3 {
+        font-size: 1em;
+        padding-right: 10px;
+    }
+
+    .articleHeader > div {
+        font-size: 14px;
+    }
+
+    .sectionStyle > h4 {
+        font-size: 16px;
+    }
+
+    .sectionStyle > p {
+        font-size: 14px;
+    }
+}
+
