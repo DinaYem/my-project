@@ -1,0 +1,34 @@
+{
+    "references": [
+        {
+            "p":"[1] J. H. Nord, A. Koohang, and J. Paliszkiewicz, “The Internet of Things: review and theoretical framework,” Expert Systems with Applications, vol. 133, pp. 97-108, 2019."
+        },
+        {
+            "p":"[2] C. Ardito, P. Buono, G. Desolda, and M. Matera, “From smart objects to smart experiences: an end-user development approach,” International Journal of Human-Computer Studies, vol. 114, pp. 51-68, 2018."
+        },
+        {
+            "p":"[3] H. Lieberman, F. Paterno, M. Klann, and V. Wulf, “End-user development: an emerging paradigm,” in End User Development. Dordrecht, Netherlands: Springer, 2006, pp. 1-8."
+        },
+        {
+            "p":"[4] F. Paterno and C. Santoro, “End-user development for personalizing applications, things, and robots,” International Journal of Human-Computer Studies, vol. 131, pp. 120-130, 2019."
+        },
+        {
+            "p":"[5] D. J. Langley, J. van Doorn, I. C. Ng, S. Stieglitz, A. Lazovik, and A. Boonstra, “The Internet of everything: smart things and their impact on business models,” Journal of Business Research, vol. 122, pp. 853-863, 2021. "
+        },
+        {
+            "p":"[6] G. Fischer, E. Giaccardi, Y. Ye, A. G. Sutcliffe, and N. Mehandjiev, “Meta-design: a manifesto for end-user development,” Communications of the ACM, vol. 47, no. 9, pp. 33-37, 2004."
+        },
+        {
+            "p":"[7] F. Paterno, “End user development: Survey of an emerging field for empowering people,” International Scholarly Research Notices, vol. 2013, article no. 532659, 2013."
+        },
+        {
+            "p":"[8] IFTT Web-Based Service [Online]. Available: https://ifttt.com/."
+        },
+        {
+            "p":"[9] B. Ur, M. Pak Yong Ho, S. Brawner, J. Lee, S. Mennicken, N. Picard, D. Schulze, and M. L. Littman, “Trigger-action programming in the wild: An analysis of 200,000 IFTTT recipes,” in Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems, San Jose, CA, 2016, pp. 3227-3231."
+        },
+        {
+            "p":"[10] Amazon's Alexa [Online]. Available: https://developer.amazon.com/en-US/alexa."
+        }
+    ]
+}
