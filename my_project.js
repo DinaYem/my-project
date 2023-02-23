@@ -1,6 +1,6 @@
 "use strict";
 
-
+/* ----- temporizzatore -----*/
 let counter = 0;
 let nameHeader = "";
 let timerId = null;
@@ -9,7 +9,7 @@ function pageLoaded()
 {
     const theme = ["I", "n", "t", "e", "r", "n", "e", "t", " ", "o", "f", " ", "T", "h", "i", "n", "g", "s"]
     //const totalCycles = 3;
-    const id = document.querySelector(".articleHeader > h2");
+    const id = document.querySelector("h2");
     const style = "styleH2" 
     const delay = 100;
     timerId = setInterval(setThemeOfBackground, delay, theme, id, style); //temporizzatore
@@ -19,8 +19,6 @@ function pageLoaded()
 }
 window.onload = pageLoaded;  
 
-
-/* ----- temporizzatore -----*/
 function setThemeOfBackground(themeParam, idParam, styleParam)
 {
     nameHeader += themeParam[counter];
@@ -32,7 +30,6 @@ function setThemeOfBackground(themeParam, idParam, styleParam)
     if(counter == themeParam.length)
         clearInterval(timerId);
 } 
-
 
 
 /* ----- Dropdown list Sections ----- */ 
@@ -58,7 +55,6 @@ function setInnerNavbarVisibility()
 } 
 
 
-
 /* ------ correct the class name styleAbstract ------ */
     let section = document.querySelectorAll("section.styleAbstract");
     console.log(section.length);
@@ -71,15 +67,13 @@ function setInnerNavbarVisibility()
     } 
 
 
-
 /* ----- create footer class ----- */
-    let footer = document.body.lastElementChild.previousElementSibling;
+    /* let footer = document.body.lastElementChild.previousElementSibling;
     console.log(footer);
     footer.id = "footerStyle";
     let paragraph = document.createElement("p");
     paragraph.textContent = "SJ";
-    footer.prepend(paragraph);
-
+    footer.prepend(paragraph); */
 
 
 /* ------ add class ------ */
@@ -87,12 +81,11 @@ function setInnerNavbarVisibility()
     document.querySelector(".articleHeaderImage").classList.add("opacityStyle");
 
 
-
 /* ------ caricare references.json ----- */
 function loadExternalData()
 {
     let path = "../references.json"
-
+    
     let fetchPromise = fetch(path)
 
     fetchPromise.then(function(response)
@@ -144,7 +137,7 @@ function loadExternalData()
 function createReferences(jsonObjectParam)
 {
     const referencesArray = jsonObjectParam.references;
-    const appendBody = document.querySelector('.article');
+    const appendBody = document.querySelector('.section80');
     for (let i = 0; i < referencesArray.length; i++)
     {
         const reference = referencesArray[i];
@@ -164,4 +157,3 @@ p.textContent = pParam;
 
 return p;
 }
-
