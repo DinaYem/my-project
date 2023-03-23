@@ -4,250 +4,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first project</title>
+    <title>My portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="/css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-
-    <header class="header">
-        <p>SJ</p>
-        <h1>Scientific Journal</h1>
-        <form class="form">
+    <header>
+        <h1>Dina Yem</h1>
+        <h5>Web developer enthusiast</h5>
+        <a href="#" class="btn-rounded-white">Download Resume</a>
+        <!-- <form class="form">
             <span class="menu">Menu</span>
             <input type="text" placeholder="Article">
             <input type="submit" class="btn" value="Search">
-        </form>    
+        </form>     -->
     </header>
-
-    <nav class="nav">
-        <ul class="mainBar">
-          <li>
-            <a href="#" onclick="onNavItemClick('/my_project.html'); return false;">Home</a>
-          </li>
-          <li>
-            <a href="" target="_blank">About</a>
-          </li>
-          <li>
-           <a href="#" onclick="onNavItemClick('/articles.html'); return false;">Articles</a>
-          </li>
-          <li>
-            <a href="" target="_blank">Submission</a>
-          </li>
-        </ul>
-        <ul class="registerLoginBar">
-          <li><a href="/register.html" target="_blank">Register</a></li>
-          <li><a href="" target="_blank">Log in</a></li>
-        </ul>
+    <nav class="navBar">
+      <div id="hamburgerContainer" onclick="changeHamburgerIcon(); setInnerNavbarVisibility();">
+        <!-- onclick="changeHamburgerIcon() dice di eseguire transition delle stanghete (rect1, rect2, rect3) quando vanno clickati.
+        Invece, JS va applicato per reattivare la classe="changeHamburgerIcon" non segnata in html quando 
+        la pagina viene caricata nella finestra -->
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+      </div>
+      <div id="innerNavbarContainer" class="showInnerNavbar">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#competences">Skills</a>
+        <a href="#" onclick="onNavItemClick('/article'); return false;">Projects</a>
+      </div>
+   <!--    <ul class="registerLoginBar">
+        <li><a href="/register.html" target="_blank">Register</a></li>
+        <li><a href="" target="_blank">Log in</a></li>
+      </ul> -->
     </nav>
 
-      <main>
+    <main>
+      <aside class="aside20">
 
-        <aside class="aside20">
-          
-           <!--  <p>Download PDF</p>
-            <hr> -->
-          
-          <div id="hamburgerContainer" onclick="changeHamburgerIcon(); setInnerNavbarVisibility();">
-            <p class="dropDownList">Sections</p>
-            <div class="hamburger">
-              <div class="rect1"></div>
-              <div class="rect2"></div>
-             <!--  <div class="rect3"></div> -->
+            <!-- <div id="hamburgerContainer" onclick="changeHamburgerIcon(); setInnerNavbarVisibility();">
+              <p class="dropDownList">About</p>
+              <div class="hamburger">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div> -->
+             <!-- </div> -->
+            <img src="/assets1/Photo for CV.jpg" alt="mioFoto" class="responsiveImg mb-5"/>
+            <div>
+              <p>Via Alcide de Gasperi 18, Padova</p>
+              <p>dina.yem888@gmail.com</p>
+              <p>+39 380 156 1827</p>
+              <!-- <p>Linkedin: https://www.linkedin.com/in/dina-yem-18a0601b8/</p> -->
+              <p>Sesso: femminile</p>
+              <p>Nazionalità: kazaka</p>
+              <p>Data di nascita: 28/02/1983 </p>
             </div>
+            <div>
+            <br><br><br>
+              <ul><h3 id="competences">Competenze  trasversali:</h3>
+                  <li>Problem solving</li>
+                  <li>Team player</li>
+              </ul>
+              <ul><h3>Competenze digitali:</h3>
+                  <li>Visual studio code</li>
+                  <li>Github</li>
+                  <li>Amadeus</li>
+                  <li>SAP</li>
+              </ul>
+              <ul><h3>Interessi professionali:</h3>
+                  <li>Web developing</li>
+                  <li>Web analytics</li>
+                  <li>User experience</li>
+              </ul>
+              <ul><h3>Lingue:</h3>
+                  <li>Inglese - B2</li>
+                  <li>Italiano - B2</li>
+                  <li>Russo - madrelingua</li>
+              </ul>
+              <ul><h3>Ulteriori informazioni:</h3>
+                  <li>Permesso di soggiorno</li>
+                  <li>Patente B</li>
+              </ul>
+              <ul><h3>Sport:</h3>
+              <li>Yoga</li>
+              <li>Ciclismo</li>
+              </ul>
+            </div>
+
+      </aside>
+      <section class="section80">
+        <div>
+          <h2 id="about">About me</h2><hr>
+          <p> Mi chiamo Dina Yem. Sono kazaka, parlo italiano e inglese.</p>
+          <p>In Kazakistan l’esperienza lavorativa più significativa che ho maturato è stata presso l’azienda Samsung, dove mi sono occupata di amministrazione per 7 anni. </p>
+          <p> Nel 2018 sono venuta in Italia e nel 2021 ho conseguito la laurea magistrale in scienze cognitive con una successiva specializzazione in Linguistica Computazionale presso l’università di Trento. </p>  
+          <p>All'università ho ottenuto le prime conoscenze di programmazione e ho scritto la tesi sulla user experience. Dopo la laurea cercavo di specializzarmi in UX/UI e da qui è nato il mio interesse per il mondo IT. La vera passione mi è venuta facendo il corso "sviluppatore front end". Ho già imparato HTML, CSS, le basi di Javascript e Bootstrap. Adesso sto per iniziare ad acquisire React dopo di che ho intenzione di conoscere il lato server. In allegato invio il CV per approfondire il mio profile qualora apparisse interessante.
+          </p>
+        </div>
+        <div>
+          <h2 id="education">Education</h2><hr>
+          <div class="sectionStyle">
+            <h3>Corso Sviluppo web: Front-End Developer</h3>
+            <h4>Musa Formazione e Lavoro/Italia</h4>
+            <ul>
+              <li>HTML5 / CSS3 / Javascript / Bootstrap / React</li>
+              <li>Link al mio progetto in corso: https://github.com/DinaYem/my-project</li>
+            </ul>
           </div>
-          <div id="innerNavbarContainer" class="showInnerNavbar">
-            <a href="#abstract">Abstract</a>
-            <a href="#introduction">Introduction</a>
-            <a href="#study1">Study 1</a>
-            <a href="#study2">Study 2</a>
-            <a href="#generalDiscussion">General discussion</a>
-            <a href="#conclusion">Conclusion</a>
-            <!-- <a href="">Authors</a> -->
-            <a href="#references">References</a>
+          <div class="sectionStyle">
+            <h3>Tirocinio</h3>
+            <h4>ICT and Cognitive Science Lab presso l’università di Trento/Italia</h4>
+            <ul>Attività di ricerca sulla user experience dei dispositivi elettronici in smart home:
+              <li>reclutamento e intervista a 25 partecipanti.</li>
+              <li>analisi qualitative dei dati raccolti.</li>
+              <li>I resultati della ricerca di master tesi sono stati pubblicati nell’articolo “Improving
+                Mental Models in IoT End-User Development” HCIS, 2022.</li>
+            </ul>
           </div>
-
-       <!--    <div class="advContainer">
-            <p id="timer"></p>
-            <p class="adv">Publicità</p>
-          </div> -->
-
-        </aside>
-        
-
-        <section class="section80">
-
-              <!-- <article class="article">
-                <h2 class="articleHeaderImage"></h2>
-                <header class="sectionStyle"> -->
-                  <!-- <div id="styleAbbreviation"></div> -->
-            <!--  <p class="articlesP">Articles</p>
-                  <h3>The chalenges of ICT</h3>
-                  <p>Author1, Author2, Author3, and Author4*</p>
-                  <p>Human-centric Computing and Information Sciences volume 12, Article number: 48 (2022) Cite this article 2 Accesses</p>
-                </header>
-                
-                <section class="styleAbstract">
-                  <h4 id="abstract">Abstract</h4>
-                  <hr>
-                   <p><img src="/assets1/research.jpeg" class="responsiveImage"/>
-                    Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                    tipografia e della stampa. Lorem Ipsum è considerato il testo
-                    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-                    tipografo prese una cassetta di caratteri e li assemblò per preparare
-                    un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-                    anche al passaggio alla videoimpaginazione, pervenendoci
-                    sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-                    diffusione dei fogli di caratteri trasferibili “Letraset”, che
-                    contenevano passaggi del Lorem Ipsum, e più recentemente da software
-                    di impaginazione come Aldus PageMaker, che includeva versioni del
-                    Lorem Ipsum.</p>
-                    <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                      tipografia e della stampa. Lorem Ipsum è considerato il testo
-                      segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-                      tipografo prese una cassetta di caratteri e li assemblò per preparare
-                      un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-                      anche al passaggio alla videoimpaginazione, pervenendoci
-                      sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-                      diffusione dei fogli di caratteri trasferibili “Letraset”, che
-                      contenevano passaggi del Lorem Ipsum, e più recentemente da software
-                      di impaginazione come Aldus PageMaker, che includeva versioni del
-                      Lorem Ipsum.
-                </section>
-                <section class="styleAbstract">
-                  <h4 id="introduction">Introduction</h4>
-                  <hr>
-                   <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                    tipografia e della stampa. Lorem Ipsum è considerato il testo
-                    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-                    tipografo prese una cassetta di caratteri e li assemblò per preparare
-                    un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-                    anche al passaggio alla videoimpaginazione, pervenendoci
-                    sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-                    diffusione dei fogli di caratteri trasferibili “Letraset”, che
-                    contenevano passaggi del Lorem Ipsum, e più recentemente da software
-                    di impaginazione come Aldus PageMaker, che includeva versioni del
-                    Lorem Ipsum.</p>
-                    <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                      tipografia e della stampa. Lorem Ipsum è considerato il testo
-                      segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-                      tipografo prese una cassetta di caratteri e li assemblò per preparare
-                      un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-                      anche al passaggio alla videoimpaginazione, pervenendoci
-                      sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-                      diffusione dei fogli di caratteri trasferibili “Letraset”, che
-                      contenevano passaggi del Lorem Ipsum, e più recentemente da software
-                      di impaginazione come Aldus PageMaker, che includeva versioni del
-                      Lorem Ipsum.</p>
-                </section>
-                <section class="styleAbstract">
-                  <h4 id="study1">Study 1</h4>
-                  <hr>
-                   <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                    tipografia e della stampa. Lorem Ipsum è considerato il testo
-                    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-                    tipografo prese una cassetta di caratteri e li assemblò per preparare
-                    un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-                    anche al passaggio alla videoimpaginazione, pervenendoci
-                    sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-                    diffusione dei fogli di caratteri trasferibili “Letraset”, che
-                    contenevano passaggi del Lorem Ipsum, e più recentemente da software
-                    di impaginazione come Aldus PageMaker, che includeva versioni del
-                    Lorem Ipsum.</p>
-                    <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                      tipografia e della stampa. Lorem Ipsum è considerato il testo
-                      segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-                      tipografo prese una cassetta di caratteri e li assemblò per preparare
-                      un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-                      anche al passaggio alla videoimpaginazione, pervenendoci
-                      sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-                      diffusione dei fogli di caratteri trasferibili “Letraset”, che
-                      contenevano passaggi del Lorem Ipsum, e più recentemente da software
-                      di impaginazione come Aldus PageMaker, che includeva versioni del
-                      Lorem Ipsum.</p>
-                </section>
-                <section class="styleAbstract">
-                  <h4 id="study2">Study 2</h4>
-                  <hr>
-                   <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                    tipografia e della stampa. Lorem Ipsum è considerato il testo
-                    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-                    tipografo prese una cassetta di caratteri e li assemblò per preparare
-                    un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-                    anche al passaggio alla videoimpaginazione, pervenendoci
-                    sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-                    diffusione dei fogli di caratteri trasferibili “Letraset”, che
-                    contenevano passaggi del Lorem Ipsum, e più recentemente da software
-                    di impaginazione come Aldus PageMaker, che includeva versioni del
-                    Lorem Ipsum.</p>
-                    <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                      tipografia e della stampa. Lorem Ipsum è considerato il testo
-                      segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-                      tipografo prese una cassetta di caratteri e li assemblò per preparare
-                      un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-                      anche al passaggio alla videoimpaginazione, pervenendoci
-                      sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-                      diffusione dei fogli di caratteri trasferibili “Letraset”, che
-                      contenevano passaggi del Lorem Ipsum, e più recentemente da software
-                      di impaginazione come Aldus PageMaker, che includeva versioni del
-                      Lorem Ipsum.</p>
-                </section>
-                <section class="styleAbstract">
-                  <h4 id="generalDiscussion">General discussion</h4>
-                  <hr>
-                   <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                    tipografia e della stampa. Lorem Ipsum è considerato il testo
-                    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-                    tipografo prese una cassetta di caratteri e li assemblò per preparare
-                    un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-                    anche al passaggio alla videoimpaginazione, pervenendoci
-                    sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-                    diffusione dei fogli di caratteri trasferibili “Letraset”, che
-                    contenevano passaggi del Lorem Ipsum, e più recentemente da software
-                    di impaginazione come Aldus PageMaker, che includeva versioni del
-                    Lorem Ipsum.</p>
-                    <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                      tipografia e della stampa. Lorem Ipsum è considerato il testo
-                      segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-                      tipografo prese una cassetta di caratteri e li assemblò per preparare
-                      un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-                      anche al passaggio alla videoimpaginazione, pervenendoci
-                      sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-                      diffusione dei fogli di caratteri trasferibili “Letraset”, che
-                      contenevano passaggi del Lorem Ipsum, e più recentemente da software
-                      di impaginazione come Aldus PageMaker, che includeva versioni del
-                      Lorem Ipsum.</p>
-                </section>
-                <section class="styleAbstract">
-                  <h4 id="conclusion">Conclusion</h4>
-                  <hr>
-                   <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-                    tipografia e della stampa. Lorem Ipsum è considerato il testo
-                    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-                    tipografo prese una cassetta di caratteri e li assemblò per preparare
-                    un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-                    anche al passaggio alla videoimpaginazione, pervenendoci
-                    sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-                    diffusione dei fogli di caratteri trasferibili “Letraset”, che
-                    contenevano passaggi del Lorem Ipsum, e più recentemente da software
-                    di impaginazione come Aldus PageMaker, che includeva versioni del
-                    Lorem Ipsum.</p>
-                </section>
-                <section class="styleAbstract">
-                  <h4 id="references">References</h4>
-                  <hr>
-                </section>
-              </article> -->
-        </section>
+          <div class="sectionStyle">
+            <h3>Laurea magistrale in scienze cognitive: Linguistica Computazionale</h3>
+            <h4>Università di Trento, Italia</h4>
+            <p>Il corso comprende una formazione interdisciplinare focalizzata sulla comprensione dell’attività umana attraverso il linguaggio e altre modalità e fornisce conoscenze di base comuni tra cui introduzione alla psicologia cognitiva, programmazione di base, progetti di ricerca e analisi statistici.</p>
+            <p>Voto di laurea: 103/110
+            </p>
+          </div>
+          <div class="sectionStyle">
+            <h3>Laurea triennale in linguistica: Insegnamento dell’inglese come lingua straniera</h3>
+            <h4>Ablai Khan Università, Kazakistan</h4>
+            <p>Il corso comprende le discipline di linguistica teorica e metodologia didattica.</p>
+            <p>Voto di laurea: 4.56/5.00</p>
+          </div>
+        </div>
+        <div>
+          <div class="sectionStyle">
+            <h2 id="experience">Experience</h2><hr>
+            <h3>Back office operativo</h3>
+            <h4>Hotel Tourist Spa, Padova/Italia</h4>
+            <ul>
+              <li>Quotazione, prenotazione and emissione dei biglietti aerei in Amadeus.</li>
+              <li>Monitoraggio del cambio orari dei voli.</li>
+            </ul>
+          </div>
+          <div class="sectionStyle">
+            <h3>Back office commerciale (tirocinante)</h3>
+            <h4>Tecnoeka srl, Padova/Italia</h4>
+            <ul>
+              <li>Preparazione di preventivi, ordini e documenti di trasporto.</li>
+              <li>Archiviazione delle pratiche.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-        <footer class="footer">
-          <div id="innerFooterContainer">
-            <a href="https://www.facebook.com" target="_blank"><img src="/icons/fb.svg"/></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="/icons/ig.svg"/></a>
-            <a href="https://www.linkedin.com" target="_blank"><img src="/icons/ln.svg"/></a>
-            <a href="https://www.twitter.com" target="_blank"><img src="/icons/tw.svg"/></a>
-          </div>
-          <div id="innerFooter2Container">Copyright © 2023</div>
-        </footer>
-        <script src="/js/code.js" type="text/javascript"></script>
+    <footer class="footer">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <p>Copyright © 2023 Dina Yem</p>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/dina-yem-18a0601b8/"><i class="bi bi-linkedin"></i></a>
+        </li>
+        <!--  <a href="https://www.facebook.com" target="_blank"><img src="/icons/fb.svg"/></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="/icons/ig.svg"/></a> -->
+        <!-- <a href="https://www.linkedin.com/in/dina-yem-18a0601b8/" target="_blank"><img src="/icons/ln.svg"/></a> -->
+        <!--  <a href="https://www.twitter.com" target="_blank"><img src="/icons/tw.svg"/></a> -->
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/js/code.js" type="text/javascript"></script>
 </body>
 </html>
