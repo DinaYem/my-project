@@ -24,7 +24,6 @@ function setThemeOfBackground(themeParam, idParam, styleParam)
 };
 
 
-
 /* ----- Dropdown list Sections ----- */ 
 function changeHamburgerIcon()
 {
@@ -49,7 +48,7 @@ function setInnerNavbarVisibility()
 
 
 /* ------ correct the class name styleAbstract ------ */
-    let section = document.querySelectorAll("section.styleAbstract");
+    /* let section = document.querySelectorAll("section.styleAbstract");
     console.log(section.length);
     for (const key of section)
     {
@@ -57,7 +56,7 @@ function setInnerNavbarVisibility()
         key.classList.add("sectionStyle");
         console.log(key);
         //console.log(sectionStyle);
-    } 
+    }  */
 
 
 /* ----- create footer class ----- */
@@ -78,216 +77,56 @@ function setInnerNavbarVisibility()
 /* ----- Routing ----- */
 let contentSection = document.querySelector('.section80');
 
-let homePage = `<article class="article">
-<h2 class="articleHeaderImage"></h2>
-<header class="sectionStyle">
-  <!-- <div id="styleAbbreviation"></div> -->
-  <p class="articlesP">Articles</p>
-  <h3>The chalenges of ICT</h3>
-  <p>Author1, Author2, Author3, and Author4*</p>
-  <p>Human-centric Computing and Information Sciences volume 12, Article number: 48 (2022) Cite this article 2 Accesses</p>
-</header>
-
-<section class="styleAbstract">
-  <h4 id="abstract">Abstract</h4>
-  <hr>
-   <p><img src="/assets1/research.jpeg" class="responsiveImage"/>
-    Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-    tipografia e della stampa. Lorem Ipsum è considerato il testo
-    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-    tipografo prese una cassetta di caratteri e li assemblò per preparare
-    un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-    anche al passaggio alla videoimpaginazione, pervenendoci
-    sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-    diffusione dei fogli di caratteri trasferibili “Letraset”, che
-    contenevano passaggi del Lorem Ipsum, e più recentemente da software
-    di impaginazione come Aldus PageMaker, che includeva versioni del
-    Lorem Ipsum.</p>
-    <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-      tipografia e della stampa. Lorem Ipsum è considerato il testo
-      segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-      tipografo prese una cassetta di caratteri e li assemblò per preparare
-      un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-      anche al passaggio alla videoimpaginazione, pervenendoci
-      sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-      diffusione dei fogli di caratteri trasferibili “Letraset”, che
-      contenevano passaggi del Lorem Ipsum, e più recentemente da software
-      di impaginazione come Aldus PageMaker, che includeva versioni del
-      Lorem Ipsum.
-</section>
-<section class="styleAbstract">
-  <h4 id="introduction">Introduction</h4>
-  <hr>
-   <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-    tipografia e della stampa. Lorem Ipsum è considerato il testo
-    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-    tipografo prese una cassetta di caratteri e li assemblò per preparare
-    un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-    anche al passaggio alla videoimpaginazione, pervenendoci
-    sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-    diffusione dei fogli di caratteri trasferibili “Letraset”, che
-    contenevano passaggi del Lorem Ipsum, e più recentemente da software
-    di impaginazione come Aldus PageMaker, che includeva versioni del
-    Lorem Ipsum.</p>
-    <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-      tipografia e della stampa. Lorem Ipsum è considerato il testo
-      segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-      tipografo prese una cassetta di caratteri e li assemblò per preparare
-      un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-      anche al passaggio alla videoimpaginazione, pervenendoci
-      sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-      diffusione dei fogli di caratteri trasferibili “Letraset”, che
-      contenevano passaggi del Lorem Ipsum, e più recentemente da software
-      di impaginazione come Aldus PageMaker, che includeva versioni del
-      Lorem Ipsum.</p>
-</section>
-<section class="styleAbstract">
-  <h4 id="study1">Study 1</h4>
-  <hr>
-   <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-    tipografia e della stampa. Lorem Ipsum è considerato il testo
-    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-    tipografo prese una cassetta di caratteri e li assemblò per preparare
-    un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-    anche al passaggio alla videoimpaginazione, pervenendoci
-    sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-    diffusione dei fogli di caratteri trasferibili “Letraset”, che
-    contenevano passaggi del Lorem Ipsum, e più recentemente da software
-    di impaginazione come Aldus PageMaker, che includeva versioni del
-    Lorem Ipsum.</p>
-    <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-      tipografia e della stampa. Lorem Ipsum è considerato il testo
-      segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-      tipografo prese una cassetta di caratteri e li assemblò per preparare
-      un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-      anche al passaggio alla videoimpaginazione, pervenendoci
-      sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-      diffusione dei fogli di caratteri trasferibili “Letraset”, che
-      contenevano passaggi del Lorem Ipsum, e più recentemente da software
-      di impaginazione come Aldus PageMaker, che includeva versioni del
-      Lorem Ipsum.</p>
-</section>
-<section class="styleAbstract">
-  <h4 id="study2">Study 2</h4>
-  <hr>
-   <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-    tipografia e della stampa. Lorem Ipsum è considerato il testo
-    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-    tipografo prese una cassetta di caratteri e li assemblò per preparare
-    un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-    anche al passaggio alla videoimpaginazione, pervenendoci
-    sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-    diffusione dei fogli di caratteri trasferibili “Letraset”, che
-    contenevano passaggi del Lorem Ipsum, e più recentemente da software
-    di impaginazione come Aldus PageMaker, che includeva versioni del
-    Lorem Ipsum.</p>
-    <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-      tipografia e della stampa. Lorem Ipsum è considerato il testo
-      segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-      tipografo prese una cassetta di caratteri e li assemblò per preparare
-      un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-      anche al passaggio alla videoimpaginazione, pervenendoci
-      sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-      diffusione dei fogli di caratteri trasferibili “Letraset”, che
-      contenevano passaggi del Lorem Ipsum, e più recentemente da software
-      di impaginazione come Aldus PageMaker, che includeva versioni del
-      Lorem Ipsum.</p>
-</section>
-<section class="styleAbstract">
-  <h4 id="generalDiscussion">General discussion</h4>
-  <hr>
-   <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-    tipografia e della stampa. Lorem Ipsum è considerato il testo
-    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-    tipografo prese una cassetta di caratteri e li assemblò per preparare
-    un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-    anche al passaggio alla videoimpaginazione, pervenendoci
-    sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-    diffusione dei fogli di caratteri trasferibili “Letraset”, che
-    contenevano passaggi del Lorem Ipsum, e più recentemente da software
-    di impaginazione come Aldus PageMaker, che includeva versioni del
-    Lorem Ipsum.</p>
-    <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-      tipografia e della stampa. Lorem Ipsum è considerato il testo
-      segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-      tipografo prese una cassetta di caratteri e li assemblò per preparare
-      un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-      anche al passaggio alla videoimpaginazione, pervenendoci
-      sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-      diffusione dei fogli di caratteri trasferibili “Letraset”, che
-      contenevano passaggi del Lorem Ipsum, e più recentemente da software
-      di impaginazione come Aldus PageMaker, che includeva versioni del
-      Lorem Ipsum.</p>
-</section>
-<section class="styleAbstract">
-  <h4 id="conclusion">Conclusion</h4>
-  <hr>
-   <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della
-    tipografia e della stampa. Lorem Ipsum è considerato il testo
-    segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-    tipografo prese una cassetta di caratteri e li assemblò per preparare
-    un testo campione. È sopravvissuto non solo a più di cinque secoli, ma
-    anche al passaggio alla videoimpaginazione, pervenendoci
-    sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la
-    diffusione dei fogli di caratteri trasferibili “Letraset”, che
-    contenevano passaggi del Lorem Ipsum, e più recentemente da software
-    di impaginazione come Aldus PageMaker, che includeva versioni del
-    Lorem Ipsum.</p>
-</section>
-<section class="styleAbstract">
-  <h4 id="references">References</h4>
-  <hr>
-</section>
-</article>`;
-let articlesPage = ` <div class="videoContainer">
+let publication = "../article.json"
+/* let articlesPage = ` <div class="videoContainer">
 <video controls autoplay="true" muted="false" class="responsiveVideo">
     <source src="videos/big_buck_bunny_720p_2mb.mp4" type="video/mp4">
     <!--.ogg-->
     <!--.webm-->
     Il tuo browser non supporta video.
 </video>
-</div>`;
+</div>`; */
 
 let router = {
-    '/my_project.html': homePage,
-    '/articles.html': articlesPage
+    '/article': publication,
+    //'/articles.html': articlesPage
 };
 
 let loadInternalData = () => {
     let route = window.location.pathname;
-    //console.log(route);
-    contentSection.innerHTML = router[route];
-
-    if(route == '/my_project.html') 
+    //contentSection.innerHTML = router[route];
+    //loadExternalData(router[route]);
+    //console.log(router[route]);
+    /* if(route == '/my_project.html') 
     {
-        loadExternalData(); //caricare references 
         
         /* ----- temporizzatore Article Header -----*/
         
-        const theme = ["I", "n", "t", "e", "r", "n", "e", "t", " ", "o", "f", " ", "T", "h", "i", "n", "g", "s"]
+      /*  const theme = ["I", "n", "t", "e", "r", "n", "e", "t", " ", "o", "f", " ", "T", "h", "i", "n", "g", "s"]
         //const totalCycles = 3;
         const id = document.querySelector("h2");
         const style = "styleH2";
         const delay = 100;
 
         timerId = setInterval(setThemeOfBackground, delay, theme, id, style); //temporizzatore
-    }
+    } */
 }
 
 let onNavItemClick = (pathname) => {
     let route = window.location.origin;
     let totalPath = route + pathname;
+    console.log(totalPath);
     window.history.pushState({}, "", totalPath);
     contentSection.innerHTML = router[pathname];
 
     if(pathname == '/my_project.html')
     {    
-        loadExternalData(); 
+        loadExternalData(router[route]); 
     } 
 
-    if(pathname == '/articles.html')
+    if(pathname == '/article')
     {
-        createArticle();
+        loadExternalData(router[pathname]); 
     }
 }
 
@@ -310,11 +149,11 @@ window.onpopstate = () => {
 
 
 /* ------ caricare file 'references.json' ----- */
-function loadExternalData()
+function loadExternalData(route)
 {
-    let path = "../references.json"
+    //let path = "../references.json"
     
-    let fetchPromise = fetch(path)
+    let fetchPromise = fetch(route)
 
     fetchPromise.then(function(response)
     {
@@ -349,9 +188,9 @@ function loadExternalData()
         //console.log(JSON.stringify({ x: 15, y: 16 }));
         //Il contenuto remoto.
         console.log("jsonObject: " + jsonObject);
-        console.log("JSON.stringify(jsonObject): " + JSON.stringify(jsonObject));
+        //console.log("JSON.stringify(jsonObject): " + JSON.stringify(jsonObject));
 
-        createReferences(jsonObject);
+        createArticle(jsonObject);
         //costruisciTabella2(jsonObject);
     })
     .catch(function(error)
@@ -362,36 +201,108 @@ function loadExternalData()
     console.log(fetchPromise);
 }
 
-function createReferences(jsonObjectParam)
+function createArticle(jsonObjectParam)
 {
-    const referencesArray = jsonObjectParam.references;
-    const appendBody = document.querySelector('.section80');
-    for (let i = 0; i < referencesArray.length; i++)
+    const article = jsonObjectParam.article;
+    const section80 = document.querySelector('.section80');
+    for (let i = 0; i < article.length; i++)
     {
-        const reference = referencesArray[i];
-        const newReferences = insertReferences(reference.p);
-        appendBody.append(newReferences);
+        const articleAttributes = article[i];
+
+        const newArticle = createArticle2(
+                                        articleAttributes.imgPath,
+                                        articleAttributes.imgAlt,
+                                        articleAttributes.mediaType,
+                                        articleAttributes.h2,
+                                        articleAttributes.authors,
+                                        articleAttributes.journal,
+                                        articleAttributes.sections,
+                                        articleAttributes.references);
+        section80.append(newArticle);
     }
 }
 
-function insertReferences(pParam)
+function createArticle2(imgPath, imgAlt, mediaType, h2, authorsParam, journalParam, sections,referencesParam)
 {
-//const references = document.createElement('section');
-const p = document.createElement('p');
-p.textContent = pParam;
-//references.append(p);
+    const article = document.createElement('article');
+    const header = document.createElement('header');
+    const h2Text = document.createElement('h2');
+    const authors = document.createElement('p');
+    const journal = document.createElement('p');
+    const references = document.createElement('div');
+   
+    article.append(header);
 
-//references.classList.add = sectionStyle;
+    if(mediaType == "image")
+    header.innerHTML = "<img src=\"" + imgPath + "\" alt=\"" + imgAlt + "\"" + "class=\"responsiveImage\">";
+    else if(mediaType == "video")
+    header.innerHTML = `<video controls autoplay="true" muted="false" class="responsiveImage">
+                        <source src=${imgPath} type="video/mp4">
+                        Il tuo browser non supporta video.
+                    </video>`;
+    else
+    div.innerHTML = "Content not defined."
+    
+    h2Text.textContent = h2;
+    authors.textContent = authorsParam;
+    journal.textContent = journalParam;
+    header.append(h2Text);
+    header.append(authors);
+    header.append(journal);
 
-return p;
-}
+        for(let i = 0; i <sections.length; i++)
+        {
+            //console.log(sections[i]);
+            const section = document.createElement('section');
+            section.className = "sectionStyle";
+            article.append(section);
+
+            if(sections[i].hasOwnProperty("h4Text")) 
+            {   
+                const h4 = document.createElement('h4');
+                h4.textContent = sections[i].h4Text;
+                section.append(h4); 
+            }
+            
+            if(sections[i].paragraph);
+            {
+                const paragraph = document.createElement("p");
+                paragraph.textContent = sections[i].paragraph;
+                section.append(paragraph);
+                //console.log(sections[i].paragraph);
+            }
+        }
+
+    let isFirstTime = true;
+        if(isFirstTime == true)
+        {
+            let h4References = document.createElement('h4');
+            h4References.textContent = "References";
+            h4References.className = "sectionStyle"
+            references.append(h4References);
+        }
+        isFirstTime = false;
+        
+    let rf = []
+    for(let y = 0; y <referencesParam.length; y++)
+    {
+        //console.log(referencesParam[y]);
+        const p = document.createElement('p');
+        p.textContent = referencesParam[y];
+        rf[y] = p;
+        //console.log(ps);
+        references.append(p); 
+        }
+    article.append(references);
+    return article;
+} 
 
 
 /* ----- Create article ----- */
-function createArticle()
+/* function createArticle(jsonObjectParam)
 {
     const article = document.createElement('article');
-    //const header = document.createElement('header');
+    const header = document.createElement('header');
     //const divVideo = document.createElement('video');
     const h3 = document.createElement('h3');
     const authors = document.createElement('div');
@@ -429,4 +340,4 @@ function createArticle()
         section.append(ps[i]);
     }
     contentSection.append(article);
-};
+}; */
