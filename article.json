@@ -1,0 +1,68 @@
+{
+    "article":
+    [
+        {
+        "imgPath": "assets1/research.jpeg",
+        "imgAlt": "research...",
+        "mediaType": "image",
+        "h2": "The chalenges of ICT",
+        "authors": "Author1, Author2, Author3, and Author4*",
+        "journal": "Human-centric Computing and Information Sciences volume 12, Article number: 48 (2022) Cite this article 2 Accesses",
+        "sections": [
+        {
+            "h4Text": "Abstract",
+            "paragraph": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
+        },
+        {
+            "h4Text": "Introduction",
+            "paragraph": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
+        },
+        {
+            "h4Text": "Study",
+            "paragraph": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
+        },
+        {
+            "h4Text": "Discussion",
+            "paragraph": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
+        },
+        {
+            "h4Text": "Conclusion",
+            "paragraph": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
+        }
+        ],
+        "references": 
+        [
+            
+                "[1] J. H. Nord, A. Koohang, and J. Paliszkiewicz, “The Internet of Things: review and theoretical framework,” Expert Systems with Applications, vol. 133, pp. 97-108, 2019."
+            ,
+            
+                "[2] C. Ardito, P. Buono, G. Desolda, and M. Matera, “From smart objects to smart experiences: an end-user development approach,” International Journal of Human-Computer Studies, vol. 114, pp. 51-68, 2018."
+            ,
+            
+                "[3] H. Lieberman, F. Paterno, M. Klann, and V. Wulf, “End-user development: an emerging paradigm,” in End User Development. Dordrecht, Netherlands: Springer, 2006, pp. 1-8."
+            ,
+            
+                "[4] F. Paterno and C. Santoro, “End-user development for personalizing applications, things, and robots,” International Journal of Human-Computer Studies, vol. 131, pp. 120-130, 2019."
+            ,
+            
+                "[5] D. J. Langley, J. van Doorn, I. C. Ng, S. Stieglitz, A. Lazovik, and A. Boonstra, “The Internet of everything: smart things and their impact on business models,” Journal of Business Research, vol. 122, pp. 853-863, 2021. "
+            ,
+            
+                "[6] G. Fischer, E. Giaccardi, Y. Ye, A. G. Sutcliffe, and N. Mehandjiev, “Meta-design: a manifesto for end-user development,” Communications of the ACM, vol. 47, no. 9, pp. 33-37, 2004."
+            ,
+            
+                "[7] F. Paterno, “End user development: Survey of an emerging field for empowering people,” International Scholarly Research Notices, vol. 2013, article no. 532659, 2013."
+            ,
+            
+                "[8] IFTT Web-Based Service [Online]. Available: https://ifttt.com/."
+            ,
+            
+                "[9] B. Ur, M. Pak Yong Ho, S. Brawner, J. Lee, S. Mennicken, N. Picard, D. Schulze, and M. L. Littman, “Trigger-action programming in the wild: An analysis of 200,000 IFTTT recipes,” in Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems, San Jose, CA, 2016, pp. 3227-3231."
+            ,
+            
+                "[10] Amazon's Alexa [Online]. Available: https://developer.amazon.com/en-US/alexa."
+            
+        ]
+        }
+    ]
+}
